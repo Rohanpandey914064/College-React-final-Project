@@ -1,0 +1,211 @@
+{
+  "60": {
+    "source": {
+      "entity_id": 60,
+      "name": "Butter",
+      "category": "Dairy",
+      "flavor_profile": ["creamy", "fatty", "sweet", "buttery", "milky"],
+      "taste_dimensions": { "sweet": 0.3, "savory": 0.6, "salty": 0.1, "bitter": 0.05, "sour": 0.02 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 87, "name": "Ghee", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.72, "flavor_similarity": 0.68, "combined_score": 0.70, "shared_molecule_count": 16, "shared_flavors": ["creamy", "buttery", "fatty"] },
+        "flavor_profile": ["nutty", "creamy", "buttery", "rich", "caramel"],
+        "taste_dimensions": { "sweet": 0.3, "savory": 0.65, "salty": 0.05, "bitter": 0.05, "sour": 0.02 }
+      },
+      {
+        "entity_id": 88, "name": "Milk", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.55, "flavor_similarity": 0.60, "combined_score": 0.57, "shared_molecule_count": 10, "shared_flavors": ["creamy", "milky", "sweet"] },
+        "flavor_profile": ["creamy", "sweet", "mild", "milky", "fresh"],
+        "taste_dimensions": { "sweet": 0.4, "savory": 0.3, "salty": 0.1, "bitter": 0.02, "sour": 0.1 }
+      },
+      {
+        "entity_id": 94, "name": "Yogurt", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.48, "flavor_similarity": 0.52, "combined_score": 0.50, "shared_molecule_count": 8, "shared_flavors": ["creamy", "milky"] },
+        "flavor_profile": ["tangy", "creamy", "sour", "milky", "fresh"],
+        "taste_dimensions": { "sweet": 0.25, "savory": 0.35, "salty": 0.1, "bitter": 0.05, "sour": 0.65 }
+      },
+      {
+        "entity_id": 420, "name": "Olive Oil", "category": "Plant",
+        "similarity": { "molecule_similarity": 0.42, "flavor_similarity": 0.38, "combined_score": 0.40, "shared_molecule_count": 6, "shared_flavors": ["fatty", "rich"] },
+        "flavor_profile": ["grassy", "fruity", "peppery", "bitter", "earthy"],
+        "taste_dimensions": { "sweet": 0.1, "savory": 0.4, "salty": 0.0, "bitter": 0.4, "sour": 0.1 }
+      },
+      {
+        "entity_id": 461, "name": "Sugar", "category": "Plant",
+        "similarity": { "molecule_similarity": 0.20, "flavor_similarity": 0.35, "combined_score": 0.27, "shared_molecule_count": 2, "shared_flavors": ["sweet"] },
+        "flavor_profile": ["sweet", "clean", "neutral", "caramel"],
+        "taste_dimensions": { "sweet": 1.0, "savory": 0.0, "salty": 0.0, "bitter": 0.0, "sour": 0.0 }
+      }
+    ]
+  },
+  "62": {
+    "source": {
+      "entity_id": 62,
+      "name": "Cheese",
+      "category": "Dairy",
+      "flavor_profile": ["cheesy", "savory", "sharp", "tangy", "salty", "umami"],
+      "taste_dimensions": { "sweet": 0.1, "savory": 0.8, "salty": 0.5, "bitter": 0.1, "sour": 0.3 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 94, "name": "Yogurt", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.58, "flavor_similarity": 0.52, "combined_score": 0.55, "shared_molecule_count": 9, "shared_flavors": ["tangy", "creamy", "sour"] },
+        "flavor_profile": ["tangy", "creamy", "sour", "milky", "fresh"],
+        "taste_dimensions": { "sweet": 0.25, "savory": 0.35, "salty": 0.1, "bitter": 0.05, "sour": 0.65 }
+      },
+      {
+        "entity_id": 87, "name": "Ghee", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.45, "flavor_similarity": 0.48, "combined_score": 0.46, "shared_molecule_count": 7, "shared_flavors": ["fatty", "creamy", "rich"] },
+        "flavor_profile": ["nutty", "creamy", "buttery", "rich", "caramel"],
+        "taste_dimensions": { "sweet": 0.3, "savory": 0.65, "salty": 0.05, "bitter": 0.05, "sour": 0.02 }
+      },
+      {
+        "entity_id": 88, "name": "Milk", "category": "Dairy",
+        "similarity": { "molecule_similarity": 0.42, "flavor_similarity": 0.40, "combined_score": 0.41, "shared_molecule_count": 6, "shared_flavors": ["creamy", "milky"] },
+        "flavor_profile": ["creamy", "sweet", "mild", "milky", "fresh"],
+        "taste_dimensions": { "sweet": 0.4, "savory": 0.3, "salty": 0.1, "bitter": 0.02, "sour": 0.1 }
+      }
+    ]
+  },
+  "162": {
+    "source": {
+      "entity_id": 162,
+      "name": "Apple",
+      "category": "Fruit",
+      "flavor_profile": ["fruity", "sweet", "fresh", "crisp", "floral", "tart"],
+      "taste_dimensions": { "sweet": 0.7, "savory": 0.05, "salty": 0.0, "bitter": 0.05, "sour": 0.35 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 340, "name": "Strawberry", "category": "Berry",
+        "similarity": { "molecule_similarity": 0.62, "flavor_similarity": 0.68, "combined_score": 0.65, "shared_molecule_count": 11, "shared_flavors": ["sweet", "fruity", "fresh", "floral"] },
+        "flavor_profile": ["sweet", "fruity", "fresh", "floral", "tart"],
+        "taste_dimensions": { "sweet": 0.8, "savory": 0.02, "salty": 0.0, "bitter": 0.05, "sour": 0.3 }
+      },
+      {
+        "entity_id": 334, "name": "Lemon", "category": "Fruit",
+        "similarity": { "molecule_similarity": 0.50, "flavor_similarity": 0.55, "combined_score": 0.52, "shared_molecule_count": 8, "shared_flavors": ["fruity", "fresh", "tart"] },
+        "flavor_profile": ["citrusy", "sour", "fresh", "bright", "zesty"],
+        "taste_dimensions": { "sweet": 0.2, "savory": 0.05, "salty": 0.0, "bitter": 0.15, "sour": 0.85 }
+      },
+      {
+        "entity_id": 474, "name": "Honey", "category": "Plant",
+        "similarity": { "molecule_similarity": 0.40, "flavor_similarity": 0.48, "combined_score": 0.44, "shared_molecule_count": 5, "shared_flavors": ["sweet", "floral"] },
+        "flavor_profile": ["sweet", "floral", "fruity", "warm", "caramel"],
+        "taste_dimensions": { "sweet": 0.95, "savory": 0.03, "salty": 0.0, "bitter": 0.05, "sour": 0.05 }
+      }
+    ]
+  },
+  "46": {
+    "source": {
+      "entity_id": 46,
+      "name": "Coffee",
+      "category": "Beverage Caffeinated",
+      "flavor_profile": ["bitter", "roasted", "earthy", "caramel", "smoky", "nutty"],
+      "taste_dimensions": { "sweet": 0.2, "savory": 0.3, "salty": 0.05, "bitter": 0.75, "sour": 0.2 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 376, "name": "Chocolate", "category": "Plant",
+        "similarity": { "molecule_similarity": 0.60, "flavor_similarity": 0.62, "combined_score": 0.61, "shared_molecule_count": 12, "shared_flavors": ["bitter", "roasted", "earthy", "rich"] },
+        "flavor_profile": ["bitter", "sweet", "roasted", "earthy", "fruity"],
+        "taste_dimensions": { "sweet": 0.6, "savory": 0.1, "salty": 0.05, "bitter": 0.65, "sour": 0.15 }
+      },
+      {
+        "entity_id": 289, "name": "Black Pepper", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.38, "flavor_similarity": 0.35, "combined_score": 0.36, "shared_molecule_count": 5, "shared_flavors": ["earthy", "aromatic"] },
+        "flavor_profile": ["spicy", "pungent", "earthy", "woody", "sharp"],
+        "taste_dimensions": { "sweet": 0.05, "savory": 0.4, "salty": 0.0, "bitter": 0.3, "sour": 0.05 }
+      }
+    ]
+  },
+  "259": {
+    "source": {
+      "entity_id": 259,
+      "name": "Garlic",
+      "category": "Vegetable",
+      "flavor_profile": ["pungent", "spicy", "savory", "sulfurous", "earthy"],
+      "taste_dimensions": { "sweet": 0.1, "savory": 0.85, "salty": 0.05, "bitter": 0.2, "sour": 0.05 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 271, "name": "Onion", "category": "Vegetable",
+        "similarity": { "molecule_similarity": 0.72, "flavor_similarity": 0.70, "combined_score": 0.71, "shared_molecule_count": 14, "shared_flavors": ["pungent", "savory", "sulfurous", "earthy"] },
+        "flavor_profile": ["pungent", "savory", "sweet", "sulfurous", "sharp"],
+        "taste_dimensions": { "sweet": 0.3, "savory": 0.8, "salty": 0.05, "bitter": 0.15, "sour": 0.05 }
+      },
+      {
+        "entity_id": 289, "name": "Black Pepper", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.35, "flavor_similarity": 0.40, "combined_score": 0.37, "shared_molecule_count": 5, "shared_flavors": ["spicy", "pungent", "earthy"] },
+        "flavor_profile": ["spicy", "pungent", "earthy", "woody", "sharp"],
+        "taste_dimensions": { "sweet": 0.05, "savory": 0.4, "salty": 0.0, "bitter": 0.3, "sour": 0.05 }
+      },
+      {
+        "entity_id": 305, "name": "Ginger", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.30, "flavor_similarity": 0.35, "combined_score": 0.32, "shared_molecule_count": 4, "shared_flavors": ["spicy", "earthy", "pungent"] },
+        "flavor_profile": ["spicy", "warm", "citrusy", "pungent", "earthy"],
+        "taste_dimensions": { "sweet": 0.2, "savory": 0.2, "salty": 0.0, "bitter": 0.2, "sour": 0.1 }
+      }
+    ]
+  },
+  "330": {
+    "source": {
+      "entity_id": 330,
+      "name": "Cinnamon",
+      "category": "Spice",
+      "flavor_profile": ["spicy", "sweet", "warm", "woody", "aromatic"],
+      "taste_dimensions": { "sweet": 0.5, "savory": 0.1, "salty": 0.0, "bitter": 0.15, "sour": 0.05 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 305, "name": "Ginger", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.55, "flavor_similarity": 0.58, "combined_score": 0.56, "shared_molecule_count": 10, "shared_flavors": ["spicy", "warm", "aromatic"] },
+        "flavor_profile": ["spicy", "warm", "citrusy", "pungent", "earthy"],
+        "taste_dimensions": { "sweet": 0.2, "savory": 0.2, "salty": 0.0, "bitter": 0.2, "sour": 0.1 }
+      },
+      {
+        "entity_id": 289, "name": "Black Pepper", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.45, "flavor_similarity": 0.42, "combined_score": 0.43, "shared_molecule_count": 7, "shared_flavors": ["spicy", "warm", "woody"] },
+        "flavor_profile": ["spicy", "pungent", "earthy", "woody", "sharp"],
+        "taste_dimensions": { "sweet": 0.05, "savory": 0.4, "salty": 0.0, "bitter": 0.3, "sour": 0.05 }
+      },
+      {
+        "entity_id": 495, "name": "Vanilla", "category": "Spice",
+        "similarity": { "molecule_similarity": 0.38, "flavor_similarity": 0.45, "combined_score": 0.41, "shared_molecule_count": 6, "shared_flavors": ["sweet", "warm", "aromatic"] },
+        "flavor_profile": ["sweet", "floral", "creamy", "warm", "balsamic"],
+        "taste_dimensions": { "sweet": 0.85, "savory": 0.05, "salty": 0.0, "bitter": 0.1, "sour": 0.02 }
+      }
+    ]
+  },
+  "364": {
+    "source": {
+      "entity_id": 364,
+      "name": "Tomato",
+      "category": "Fruit",
+      "flavor_profile": ["fresh", "tangy", "sweet", "earthy", "green", "umami"],
+      "taste_dimensions": { "sweet": 0.4, "savory": 0.5, "salty": 0.05, "bitter": 0.1, "sour": 0.45 }
+    },
+    "substitutions": [
+      {
+        "entity_id": 334, "name": "Lemon", "category": "Fruit",
+        "similarity": { "molecule_similarity": 0.48, "flavor_similarity": 0.52, "combined_score": 0.50, "shared_molecule_count": 8, "shared_flavors": ["fresh", "tangy", "tart"] },
+        "flavor_profile": ["citrusy", "sour", "fresh", "bright", "zesty"],
+        "taste_dimensions": { "sweet": 0.2, "savory": 0.05, "salty": 0.0, "bitter": 0.15, "sour": 0.85 }
+      },
+      {
+        "entity_id": 162, "name": "Apple", "category": "Fruit",
+        "similarity": { "molecule_similarity": 0.42, "flavor_similarity": 0.46, "combined_score": 0.44, "shared_molecule_count": 7, "shared_flavors": ["sweet", "fresh", "fruity"] },
+        "flavor_profile": ["fruity", "sweet", "fresh", "crisp", "floral"],
+        "taste_dimensions": { "sweet": 0.7, "savory": 0.05, "salty": 0.0, "bitter": 0.05, "sour": 0.35 }
+      },
+      {
+        "entity_id": 271, "name": "Onion", "category": "Vegetable",
+        "similarity": { "molecule_similarity": 0.40, "flavor_similarity": 0.38, "combined_score": 0.39, "shared_molecule_count": 6, "shared_flavors": ["savory", "earthy"] },
+        "flavor_profile": ["pungent", "savory", "sweet", "sulfurous", "sharp"],
+        "taste_dimensions": { "sweet": 0.3, "savory": 0.8, "salty": 0.05, "bitter": 0.15, "sour": 0.05 }
+      }
+    ]
+  }
+}
