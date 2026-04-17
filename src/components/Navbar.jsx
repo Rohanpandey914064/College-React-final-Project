@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, LogOut } from "lucide-react";
+import { useAuth } from "../context/AuthContext";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Navbar() {
   const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { currentUser, logout } = useAuth();
 
   return (
     <>
@@ -45,7 +47,7 @@ export default function Navbar() {
             textDecoration: "none",
           }}
         >
-          <span style={{ fontSize: "1.5rem" }}>🧬</span>
+          <span style={{ fontSize: "1.5rem" }}></span>
           <span className="gradient-text">ByteBite</span>
         </Link>
 
@@ -72,6 +74,32 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+        </div>
+
+        {/* Auth section */}
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }} className="desktop-nav">
+          {currentUser ? (
+            <>
+              <div className="nav-user-badge">
+                <div className="nav-avatar">
+                  {currentUser.name?.charAt(0).toUpperCase()}
+                </div>
+                {currentUser.name}
+              </div>
+              <button className="nav-logout-btn" onClick={logout} title="Logout">
+                <LogOut size={15} />
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="nav-auth-btn nav-login-btn">
+                Sign In
+              </Link>
+              <Link to="/signup" className="nav-auth-btn nav-signup-btn">
+                Sign Up
+              </Link>
+            </>
+          )}
         </div>
 
         {/* Mobile toggle */}
@@ -126,6 +154,49 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          {/* Mobile auth */}
+          <div style={{ borderTop: "1px solid var(--border)", marginTop: "8px", paddingTop: "8px" }}>
+            {currentUser ? (
+              <button
+                onClick={() => { logout(); setMobileOpen(false); }}
+                style={{
+                  width: "100%",
+                  padding: "12px 16px",
+                  background: "rgba(244,63,94,0.08)",
+                  border: "1px solid rgba(244,63,94,0.2)",
+                  borderRadius: "var(--radius-md)",
+                  color: "var(--rose-400)",
+                  fontSize: "14px",
+                  cursor: "pointer",
+                  fontFamily: "var(--font-body)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <LogOut size={15} /> Logout ({currentUser.name})
+              </button>
+            ) : (
+              <div style={{ display: "flex", gap: "8px" }}>
+                <Link
+                  to="/login"
+                  onClick={() => setMobileOpen(false)}
+                  className="nav-auth-btn nav-login-btn"
+                  style={{ flex: 1, justifyContent: "center" }}
+                >
+                  Sign In
+                </Link>
+                <Link
+                  to="/signup"
+                  onClick={() => setMobileOpen(false)}
+                  className="nav-auth-btn nav-signup-btn"
+                  style={{ flex: 1, justifyContent: "center" }}
+                >
+                  Sign Up
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       )}
 

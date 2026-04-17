@@ -79,7 +79,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div
+              {/* <div
                 style={{
                   display: "inline-flex", alignItems: "center", gap: "8px",
                   padding: "8px 20px", borderRadius: "var(--radius-full)",
@@ -89,7 +89,7 @@ export default function Home() {
               >
                 <Sparkles size={16} />
                 Powered by FlavorDB &amp; RecipeDB
-              </div>
+              </div> */}
 
               <h1
                 style={{
