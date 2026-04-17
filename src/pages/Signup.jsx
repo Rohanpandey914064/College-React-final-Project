@@ -77,7 +77,7 @@ export default function Signup() {
 
         <div className="auth-header">
           <h1>Join ByteBite</h1>
-          <p>Create your free account and start exploring 🚀</p>
+          <p>Create your free account and start exploring</p>
         </div>
 
         <form onSubmit={submit} className="auth-form">
