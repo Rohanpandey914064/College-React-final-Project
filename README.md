@@ -20,8 +20,6 @@
 - [Coming Soon](#coming-soon)
 - [Credits](#credits)
 
----
-
 ## Overview
 
 ByteBite is a **computational gastronomy** tool that helps you:
